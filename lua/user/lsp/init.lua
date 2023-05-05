@@ -8,7 +8,7 @@ return {
     timeout_ms = 1000,
   },
   servers = {
-    "lua_ls", "rust_analyzer", "metals"
+    "lua_ls", "rust_analyzer", "metals", "pyright"
   },
   setup_handlers = {
     rust_analyzer = function(_, opts)
