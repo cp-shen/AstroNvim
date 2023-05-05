@@ -74,12 +74,12 @@ return {
           },
         },
       },
-      statuscolumn = vim.fn.has "nvim-0.9" == 1 and {
-        status.component.foldcolumn(),
-        status.component.fill(),
-        status.component.numbercolumn(),
-        status.component.signcolumn(),
-      } or nil,
+      -- statuscolumn = vim.fn.has "nvim-0.9" == 1 and {
+      --   status.component.foldcolumn(),
+      --   status.component.fill(),
+      --   status.component.numbercolumn(),
+      --   status.component.signcolumn(),
+      -- } or nil,
     }
   end,
   config = require "plugins.configs.heirline",
