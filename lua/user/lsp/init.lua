@@ -8,12 +8,15 @@ return {
     timeout_ms = 1000,
   },
   servers = {
-    "lua_ls", "rust_analyzer"
+    "lua_ls", "rust_analyzer", "metals"
   },
   setup_handlers = {
     rust_analyzer = function(_, opts)
-      require("user.lsp-rust").setup_rt(opts)
+      require("user.lsp.lsp-rust").setup_rt(opts)
     end,
+    metals = function (_, opts)
+      require("user.lsp.lsp-metals").setup_metals(opts)
+    end
   },
   config = { lua_ls = { settings = { Lua = require("user.lsp.lsp-lua").config } }, }
 }
