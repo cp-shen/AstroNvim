@@ -5,7 +5,7 @@ return {
 
     opts.ensure_installed = utils.list_insert_unique(
       opts.ensure_installed, {
-        "lua", "org", "nix", "haskell"
+        "lua", "org", "nix", "haskell", "scala"
       })
 
     opts.highlight.additional_vim_regex_highlighting =
