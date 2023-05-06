@@ -1,9 +1,17 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = function(_, opts)
-    -- add more things to the ensure_installed table protecting against community packs modifying it
-    opts.ensure_installed = require("astronvim.utils").list_insert_unique(opts.ensure_installed, {
-      -- "lua"
-    })
+    local utils = require("astronvim.utils")
+
+    opts.ensure_installed = utils.list_insert_unique(
+      opts.ensure_installed, {
+        "lua", "org", "nix"
+      })
+
+    opts.highlight.additional_vim_regex_highlighting =
+        utils.list_insert_unique(
+          opts.highlight.additional_vim_regex_highlighting, {
+            "org"
+          })
   end,
 }
