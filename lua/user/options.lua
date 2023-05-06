@@ -7,7 +7,7 @@ return {
     wrap = false,
     signcolumn = "yes",
     foldcolumn = "0",
-    cmdheight = 1,
+    cmdheight = 0,
     guifont = "CaskaydiaCove Nerd Font,SimHei",
   },
   g = {
