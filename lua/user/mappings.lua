@@ -8,5 +8,9 @@ return {
   },
   t = {
         ["<C-\\>"] = "<C-\\><C-n>",
+        ["<C-h>"] = false,
+        ["<C-j>"] = false,
+        ["<C-k>"] = false,
+        ["<C-l>"] = false,
   },
 }
